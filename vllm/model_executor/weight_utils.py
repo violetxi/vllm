@@ -147,7 +147,7 @@ def prepare_hf_model_weights(
 
     if fall_back_to_pt:
         allow_patterns += ["*.pt"]
-
+    
     if not is_local:
         # Before we download we look at that is available:
         fs = HfFileSystem()
